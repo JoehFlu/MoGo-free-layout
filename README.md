@@ -1,3 +1,2 @@
-# Mogo-free-layout
-My First Landing Page
+# My First Landing Page
 https://joehflu.github.io/Mogo-free-layout/
