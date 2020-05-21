@@ -1,6 +1,6 @@
-$(function() {
+$(function () {
 
-    var header = $("#header"),
+    const header = $("#header"),
         introH = $("#intro").innerHeight(),
         scrollOffset = $(window).scrollTop();
 
@@ -8,14 +8,14 @@ $(function() {
     /* Fixed Header */
     checkScroll(scrollOffset);
 
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
         scrollOffset = $(this).scrollTop();
 
         checkScroll(scrollOffset);
     });
 
     function checkScroll(scrollOffset) {
-        if( scrollOffset >= introH ) {
+        if (scrollOffset >= introH) {
             header.addClass("fixed");
         } else {
             header.removeClass("fixed");
@@ -25,10 +25,10 @@ $(function() {
 
 
     /* Smooth scroll */
-    $("[data-scroll]").on("click", function(event) {
+    $("[data-scroll]").on("click", function (event) {
         event.preventDefault();
 
-        var $this = $(this),
+        const $this = $(this),
             blockId = $this.data('scroll'),
             blockOffset = $(blockId).offset().top;
 
@@ -36,14 +36,14 @@ $(function() {
         $this.addClass("active");
 
         $("html, body").animate({
-            scrollTop:  blockOffset
+            scrollTop: blockOffset
         }, 500);
     });
 
 
 
     /* Menu nav toggle */
-    $("#nav_toggle").on("click", function(event) {
+    $("#nav_toggle").on("click", function (event) {
         event.preventDefault();
 
         $(this).toggleClass("active");
@@ -53,10 +53,10 @@ $(function() {
 
 
     /* Collapse */
-    $("[data-collapse]").on("click", function(event) {
+    $("[data-collapse]").on("click", function (event) {
         event.preventDefault();
 
-        var $this = $(this),
+        const $this = $(this),
             blockId = $this.data('collapse');
 
         $this.toggleClass("active");
