@@ -1,2 +1,2 @@
 # My First Landing Page
-https://joehflu.github.io/Mogo-free-layout/
+https://joehflu.github.io/MoGo-free-layout/
