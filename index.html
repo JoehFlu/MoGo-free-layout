@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MoGo is a creative landing page template with portfolio, services, team and blog sections.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <title>Mogo</title>
+  <title>MoGo | Creative Landing Page</title>
 </head>
 
 <body>
@@ -19,23 +20,23 @@
   <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
-        <div class="header__logo" data-scroll="#intro">MoGo</div>
+        <a class="header__logo" href="#intro" data-scroll="#intro">MoGo</a>
 
         <nav class="nav" id="nav">
-          <a class="nav__link" href="#" data-scroll="#about">About</a>
-          <a class="nav__link" href="#" data-scroll="#services">Service</a>
-          <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
-          <a class="nav__link" href="#" data-scroll="#works">Work</a>
-          <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
-          <a class="nav__link" href="#">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-          <a class="nav__link" href="#">
-            <i class="fas fa-search"></i>
-          </a>
+          <a class="nav__link" href="#about" data-scroll="#about">About</a>
+          <a class="nav__link" href="#services" data-scroll="#services">Service</a>
+          <a class="nav__link" href="#blog" data-scroll="#blog">Blog</a>
+          <a class="nav__link" href="#works" data-scroll="#works">Work</a>
+          <a class="nav__link" href="#footer" data-scroll="#footer">Contact</a>
+          <button class="nav__link nav__link--button" type="button" aria-label="Shopping cart">
+            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+          </button>
+          <button class="nav__link nav__link--button" type="button" aria-label="Search">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </button>
         </nav>
 
-        <button class="nav-toggle" id="nav_toggle" type="button">
+        <button class="nav-toggle" id="nav_toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Open menu">
           <span class="nav-toggle__item">Menu</span>
         </button>
       </div>
@@ -43,7 +44,7 @@
   </header>
 
 
-  <class="page">
+  <div class="page">
 
     <!-- Intro -->
     <div class="intro" id="intro">
@@ -52,7 +53,7 @@
           <h2 class="intro__suptitle">Creative Template</h2>
           <h1 class="intro__title">Welcome to MoGo</h1>
 
-          <a class="btn" href="#">Learn More</a>
+          <a class="btn" href="#about" data-scroll="#about">Learn More</a>
         </div>
       </div>
 
@@ -100,7 +101,7 @@
           <div class="card__item">
             <div class="card__inner">
               <div class="card__img">
-                <img src="assets/images/about/1.jpg" alt="">
+                <img src="assets/images/about/1.jpg" alt="Team members collaborating in the studio" loading="lazy" decoding="async">
               </div>
               <div class="card__text">super team</div>
             </div>
@@ -109,7 +110,7 @@
           <div class="card__item">
             <div class="card__inner">
               <div class="card__img">
-                <img src="assets/images/about/2.jpg" alt="">
+                <img src="assets/images/about/2.jpg" alt="Creative workspace with product materials" loading="lazy" decoding="async">
               </div>
               <div class="card__text">super team</div>
             </div>
@@ -118,7 +119,7 @@
           <div class="card__item">
             <div class="card__inner">
               <div class="card__img">
-                <img src="assets/images/about/3.jpg" alt="">
+                <img src="assets/images/about/3.jpg" alt="Design team discussing a project" loading="lazy" decoding="async">
               </div>
               <div class="card__text">super team</div>
             </div>
@@ -171,44 +172,44 @@
 
         <div class="services">
           <div class="services__item  services__item--border">
-            <img class="services__icon" src="assets/images/services/photography.png" alt="">
+            <img class="services__icon" src="assets/images/services/photography.png" alt="" loading="lazy" decoding="async">
 
             <div class="services__title">Photography</div>
             <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.</div>
           </div>
           <div class="services__item  services__item--border">
-            <img class="services__icon" src="assets/images/services/webdesign.png" alt="">
+            <img class="services__icon" src="assets/images/services/webdesign.png" alt="" loading="lazy" decoding="async">
 
             <div class="services__title">Web Design</div>
             <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.</div>
           </div>
           <div class="services__item  services__item--border">
-            <img class="services__icon" src="assets/images/services/creativity.png" alt="">
+            <img class="services__icon" src="assets/images/services/creativity.png" alt="" loading="lazy" decoding="async">
 
             <div class="services__title">Creativity</div>
             <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.</div>
           </div>
           <div class="services__item">
-            <img class="services__icon" src="assets/images/services/seo.png" alt="">
+            <img class="services__icon" src="assets/images/services/seo.png" alt="" loading="lazy" decoding="async">
 
-            <div class="services__title">seo</div>
+              <div class="services__title">SEO</div>
             <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.</div>
           </div>
           <div class="services__item">
-            <img class="services__icon" src="assets/images/services/css-html.png" alt="">
+            <img class="services__icon" src="assets/images/services/css-html.png" alt="" loading="lazy" decoding="async">
 
-            <div class="services__title">Css/Html</div>
+              <div class="services__title">CSS/HTML</div>
             <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.</div>
           </div>
           <div class="services__item">
-            <img class="services__icon" src="assets/images/services/digital.png" alt="">
+            <img class="services__icon" src="assets/images/services/digital.png" alt="" loading="lazy" decoding="async">
 
-            <div class="services__title">digital</div>
+              <div class="services__title">Digital</div>
             <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.</div>
           </div>
@@ -228,8 +229,8 @@
         </div>
 
         <div class="devices">
-          <img class="devices__item" src="assets/images/ipad.png" alt="">
-          <img class="devices__item  devices__item--iphone" src="assets/images/iphone.png" alt="">
+          <img class="devices__item" src="assets/images/ipad.png" alt="Tablet mockup showing the responsive layout" loading="lazy" decoding="async">
+          <img class="devices__item  devices__item--iphone" src="assets/images/iphone.png" alt="Phone mockup showing the responsive layout" loading="lazy" decoding="async">
         </div>
 
       </div>
@@ -252,17 +253,17 @@
 
         <div class="wedo">
           <div class="wedo__item">
-            <img class="wedo__img" src="assets/images/wedo.jpg" alt="">
+            <img class="wedo__img" src="assets/images/wedo.jpg" alt="Creative process desk setup" loading="lazy" decoding="async">
           </div>
 
           <div class="wedo__item">
 
             <div class="accordion">
-              <div class="accordion__item" data-collapse="#wedo_1">
-                <div class="accordion__header">
-                  <img class="accordion__icon" src="assets/images/services/photography.png" alt="">
+              <div class="accordion__item">
+                <button class="accordion__header" type="button" data-collapse="#wedo_1" aria-expanded="false" aria-controls="wedo_1">
+                  <img class="accordion__icon" src="assets/images/services/photography.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
                   <div class="accordion__title">Photography</div>
-                </div>
+                </button>
                 <div class="accordion__content" id="wedo_1">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -273,11 +274,11 @@
                 </div>
               </div>
 
-              <div class="accordion__item active" data-collapse="#wedo_2">
-                <div class="accordion__header">
-                  <img class="accordion__icon" src="assets/images/services/creativity.png" alt="">
+              <div class="accordion__item active">
+                <button class="accordion__header" type="button" data-collapse="#wedo_2" aria-expanded="true" aria-controls="wedo_2">
+                  <img class="accordion__icon" src="assets/images/services/creativity.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
                   <div class="accordion__title">Creativity</div>
-                </div>
+                </button>
                 <div class="accordion__content" id="wedo_2">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -288,11 +289,11 @@
                 </div>
               </div>
 
-              <div class="accordion__item" data-collapse="#wedo_3">
-                <div class="accordion__header">
-                  <img class="accordion__icon" src="assets/images/services/webdesign.png" alt="">
+              <div class="accordion__item">
+                <button class="accordion__header" type="button" data-collapse="#wedo_3" aria-expanded="false" aria-controls="wedo_3">
+                  <img class="accordion__icon" src="assets/images/services/webdesign.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
                   <div class="accordion__title">web design</div>
-                </div>
+                </button>
                 <div class="accordion__content" id="wedo_3">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -319,7 +320,7 @@
           <div data-slider>
             <div>
               <div class="reviews__item">
-                <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                <img class="reviews__photo" src="assets/images/avatar.png" alt="Portrait of Jon Doe" loading="lazy" decoding="async">
                 <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                   veniam, quis nostrud exercitation.”</div>
@@ -329,7 +330,7 @@
 
             <div>
               <div class="reviews__item">
-                <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                <img class="reviews__photo" src="assets/images/avatar.png" alt="Portrait of Jon Doe" loading="lazy" decoding="async">
                 <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                   veniam, quis nostrud exercitation.”</div>
@@ -361,20 +362,20 @@
           <div class="card__item">
             <div class="card__inner">
               <div class="card__img">
-                <img src="assets/images/team/1.jpg" alt="">
+                <img src="assets/images/team/1.jpg" alt="Matthew Dix, graphic designer" loading="lazy" decoding="async">
               </div>
               <div class="card__text">
                 <div class="social">
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Matthew Dix on Facebook">
                     <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Matthew Dix on Twitter">
                     <i class="fab fa-twitter"></i>
                   </a>
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Matthew Dix on Pinterest">
                     <i class="fab fa-pinterest-p"></i>
                   </a>
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Matthew Dix on Instagram">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </div>
@@ -389,20 +390,20 @@
           <div class="card__item">
             <div class="card__inner">
               <div class="card__img">
-                <img src="assets/images/team/2.jpg" alt="">
+                <img src="assets/images/team/2.jpg" alt="Christopher Campbell, branding and UX designer" loading="lazy" decoding="async">
               </div>
               <div class="card__text">
                 <div class="social">
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Christopher Campbell on Facebook">
                     <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Christopher Campbell on Twitter">
                     <i class="fab fa-twitter"></i>
                   </a>
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Christopher Campbell on Pinterest">
                     <i class="fab fa-pinterest-p"></i>
                   </a>
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Christopher Campbell on Instagram">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </div>
@@ -417,20 +418,20 @@
           <div class="card__item">
             <div class="card__inner">
               <div class="card__img">
-                <img src="assets/images/team/3.jpg" alt="">
+                <img src="assets/images/team/3.jpg" alt="Michael Fertig, developer" loading="lazy" decoding="async">
               </div>
               <div class="card__text">
                 <div class="social">
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Michael Fertig on Facebook">
                     <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Michael Fertig on Twitter">
                     <i class="fab fa-twitter"></i>
                   </a>
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Michael Fertig on Pinterest">
                     <i class="fab fa-pinterest-p"></i>
                   </a>
-                  <a class="social__item" href="#" target="_blank">
+                  <a class="social__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Michael Fertig on Instagram">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </div>
@@ -454,22 +455,22 @@
 
         <div class="logos">
           <div class="logos__item">
-            <img class="logos__img" src="assets/images/logos/1.png" alt="">
+            <img class="logos__img" src="assets/images/logos/1.png" alt="Partner logo 1" loading="lazy" decoding="async">
           </div>
           <div class="logos__item">
-            <img class="logos__img" src="assets/images/logos/2.png" alt="">
+            <img class="logos__img" src="assets/images/logos/2.png" alt="Partner logo 2" loading="lazy" decoding="async">
           </div>
           <div class="logos__item">
-            <img class="logos__img" src="assets/images/logos/3.png" alt="">
+            <img class="logos__img" src="assets/images/logos/3.png" alt="Partner logo 3" loading="lazy" decoding="async">
           </div>
           <div class="logos__item">
-            <img class="logos__img" src="assets/images/logos/4.png" alt="">
+            <img class="logos__img" src="assets/images/logos/4.png" alt="Partner logo 4" loading="lazy" decoding="async">
           </div>
           <div class="logos__item">
-            <img class="logos__img" src="assets/images/logos/5.png" alt="">
+            <img class="logos__img" src="assets/images/logos/5.png" alt="Partner logo 5" loading="lazy" decoding="async">
           </div>
           <div class="logos__item">
-            <img class="logos__img" src="assets/images/logos/6.png" alt="">
+            <img class="logos__img" src="assets/images/logos/6.png" alt="Partner logo 6" loading="lazy" decoding="async">
           </div>
         </div>
 
@@ -494,31 +495,14 @@
       <div class="works">
         <div class="works__col">
           <div class="works__item">
-            <img class="works__image" src="assets/images/works/1.jpg" alt="">
+            <img class="works__image" src="assets/images/works/1.jpg" alt="Creative project preview 1" loading="lazy" decoding="async">
             <div class="works__info">
               <div class="works__title">creatively designed</div>
               <div class="works__text">Lorem ipsum dolor sit</div>
             </div>
           </div>
           <div class="works__item">
-            <img class="works__image" src="assets/images/works/2.jpg" alt="">
-            <div class="works__info">
-              <div class="works__title">creatively designed</div>
-              <div class="works__text">Lorem ipsum dolor sit</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="works__col">
-          <div class="works__item">
-            <img class="works__image" src="assets/images/works/3.jpg" alt="">
-            <div class="works__info">
-              <div class="works__title">creatively designed</div>
-              <div class="works__text">Lorem ipsum dolor sit</div>
-            </div>
-          </div>
-          <div class="works__item">
-            <img class="works__image" src="assets/images/works/4.jpg" alt="">
+            <img class="works__image" src="assets/images/works/2.jpg" alt="Creative project preview 2" loading="lazy" decoding="async">
             <div class="works__info">
               <div class="works__title">creatively designed</div>
               <div class="works__text">Lorem ipsum dolor sit</div>
@@ -528,7 +512,14 @@
 
         <div class="works__col">
           <div class="works__item">
-            <img class="works__image" src="assets/images/works/5.jpg" alt="">
+            <img class="works__image" src="assets/images/works/3.jpg" alt="Creative project preview 3" loading="lazy" decoding="async">
+            <div class="works__info">
+              <div class="works__title">creatively designed</div>
+              <div class="works__text">Lorem ipsum dolor sit</div>
+            </div>
+          </div>
+          <div class="works__item">
+            <img class="works__image" src="assets/images/works/4.jpg" alt="Creative project preview 4" loading="lazy" decoding="async">
             <div class="works__info">
               <div class="works__title">creatively designed</div>
               <div class="works__text">Lorem ipsum dolor sit</div>
@@ -538,14 +529,24 @@
 
         <div class="works__col">
           <div class="works__item">
-            <img class="works__image" src="assets/images/works/6.jpg" alt="">
+            <img class="works__image" src="assets/images/works/5.jpg" alt="Creative project preview 5" loading="lazy" decoding="async">
+            <div class="works__info">
+              <div class="works__title">creatively designed</div>
+              <div class="works__text">Lorem ipsum dolor sit</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="works__col">
+          <div class="works__item">
+            <img class="works__image" src="assets/images/works/6.jpg" alt="Creative project preview 6" loading="lazy" decoding="async">
             <div class="works__info">
               <div class="works__title">creatively designed</div>
               <div class="works__text">Lorem ipsum dolor sit</div>
             </div>
           </div>
           <div class="works__item">
-            <img class="works__image" src="assets/images/works/7.jpg" alt="">
+            <img class="works__image" src="assets/images/works/7.jpg" alt="Creative project preview 7" loading="lazy" decoding="async">
             <div class="works__info">
               <div class="works__title">creatively designed</div>
               <div class="works__text">Lorem ipsum dolor sit</div>
@@ -565,7 +566,7 @@
           <div data-slider>
             <div>
               <div class="reviews__item">
-                <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                <img class="reviews__photo" src="assets/images/avatar.png" alt="Portrait of Jon Doe" loading="lazy" decoding="async">
                 <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                   veniam, quis nostrud exercitation.”</div>
@@ -575,7 +576,7 @@
 
             <div>
               <div class="reviews__item">
-                <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                <img class="reviews__photo" src="assets/images/avatar.png" alt="Portrait of Jon Doe" loading="lazy" decoding="async">
                 <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                   veniam, quis nostrud exercitation.”</div>
@@ -600,7 +601,7 @@
 
         <div class="clients">
           <div class="clients__item">
-            <img class="clients__photo" src="assets/images/clients/1.png" alt="">
+            <img class="clients__photo" src="assets/images/clients/1.png" alt="Client portrait Matthew Dix" loading="lazy" decoding="async">
             <div class="clients__content">
               <div class="clients__name">Matthew Dix</div>
               <div class="clients__prof">Graphic Design</div>
@@ -610,7 +611,7 @@
           </div>
 
           <div class="clients__item">
-            <img class="clients__photo" src="assets/images/clients/2.png" alt="">
+            <img class="clients__photo" src="assets/images/clients/2.png" alt="Client portrait Nick Karvounis" loading="lazy" decoding="async">
             <div class="clients__content">
               <div class="clients__name">Nick Karvounis</div>
               <div class="clients__prof">Graphic Design</div>
@@ -620,7 +621,7 @@
           </div>
 
           <div class="clients__item">
-            <img class="clients__photo" src="assets/images/clients/3.png" alt="">
+            <img class="clients__photo" src="assets/images/clients/3.png" alt="Client portrait Jaelynn Castillo" loading="lazy" decoding="async">
             <div class="clients__content">
               <div class="clients__name">Jaelynn Castillo </div>
               <div class="clients__prof">Graphic Design</div>
@@ -630,7 +631,7 @@
           </div>
 
           <div class="clients__item">
-            <img class="clients__photo" src="assets/images/clients/4.png" alt="">
+            <img class="clients__photo" src="assets/images/clients/4.png" alt="Client portrait Mike Petrucci" loading="lazy" decoding="async">
             <div class="clients__content">
               <div class="clients__name">Mike Petrucci</div>
               <div class="clients__prof">Graphic Design</div>
@@ -656,8 +657,8 @@
         <div class="blog">
           <div class="blog__item">
             <div class="blog__header">
-              <a href="#">
-                <img class="blog__photo" src="assets/images/blog/1.jpg" alt="">
+              <a href="#blog">
+                <img class="blog__photo" src="assets/images/blog/1.jpg" alt="Blog preview showing a workspace with notes" loading="lazy" decoding="async">
               </a>
               <div class="blog__date">
                 <div class="blog__date-day">15</div>
@@ -666,7 +667,7 @@
             </div>
             <div class="blog__content">
               <div class="blog__title">
-                <a href="#">Lorem ipsum dolor sit amet</a>
+                <a href="#blog">A practical guide to creative storytelling</a>
               </div>
               <div class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua.</div>
@@ -685,8 +686,8 @@
 
           <div class="blog__item">
             <div class="blog__header">
-              <a href="#">
-                <img class="blog__photo" src="assets/images/blog/2.jpg" alt="">
+              <a href="#blog">
+                <img class="blog__photo" src="assets/images/blog/2.jpg" alt="Blog preview showing a creative desk setup" loading="lazy" decoding="async">
               </a>
               <div class="blog__date">
                 <div class="blog__date-day">15</div>
@@ -695,7 +696,7 @@
             </div>
             <div class="blog__content">
               <div class="blog__title">
-                <a href="#">Lorem ipsum dolor sit amet</a>
+                <a href="#blog">How to build a memorable brand presence</a>
               </div>
               <div class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua.</div>
@@ -714,8 +715,8 @@
 
           <div class="blog__item">
             <div class="blog__header">
-              <a href="#">
-                <img class="blog__photo" src="assets/images/blog/3.jpg" alt="">
+              <a href="#blog">
+                <img class="blog__photo" src="assets/images/blog/3.jpg" alt="Blog preview showing a layered photo composition" loading="lazy" decoding="async">
               </a>
               <div class="blog__date">
                 <div class="blog__date-day">15</div>
@@ -724,7 +725,7 @@
             </div>
             <div class="blog__content">
               <div class="blog__title">
-                <a href="#">Lorem ipsum dolor sit amet</a>
+                <a href="#blog">Design details that make a landing page feel premium</a>
               </div>
               <div class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua.</div>
@@ -751,8 +752,8 @@
       <div class="container">
         <div class="map">
           <h2 class="map__title">
-            <div><i class="fas fa-map-marker-alt"></i></div>
-            <a href="https://goo.gl/maps/F8YpeCGqwrG2" target="_blank">Open Map</a>
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            <a href="https://goo.gl/maps/F8YpeCGqwrG2" target="_blank" rel="noopener noreferrer">Open Map</a>
           </h2>
         </div>
       </div>
@@ -776,20 +777,20 @@
               </div>
               <div class="footer__social-content">
                 Follow Us:
-                <a href="#" target="_blank">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
                   <i class="fab fa-facebook"></i>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
                   <i class="fab fa-instagram"></i>
                 </a>
               </div>
             </div>
 
-            <form class="subscribe" action="/" method="post">
-              <input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
+            <form class="subscribe" action="#" method="post">
+              <input class="subscribe__input" type="email" name="email" placeholder="Your Email..." autocomplete="email" required>
               <button class="subscribe__btn" type="submit">Subscribe</button>
             </form>
           </div>
@@ -799,27 +800,25 @@
 
             <div class="blogs">
               <div class="blogs__item">
-                <img class="blogs__img" src="assets/images/blog/1.jpg" alt="">
+                <img class="blogs__img" src="assets/images/blog/1.jpg" alt="Blog thumbnail showing a workspace with notes" loading="lazy" decoding="async">
                 <div class="blogs__content">
-                  <a class="blogs__title" href="#">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing</a>
+                  <a class="blogs__title" href="#blog">Why contrast and spacing matter in layout design</a>
                   <div class="blogs__date">Jan 9, 2016</div>
                 </div>
               </div>
 
               <div class="blogs__item">
-                <img class="blogs__img" src="assets/images/blog/2.jpg" alt="">
+                <img class="blogs__img" src="assets/images/blog/2.jpg" alt="Blog thumbnail showing a modern workspace" loading="lazy" decoding="async">
                 <div class="blogs__content">
-                  <a class="blogs__title" href="#">Lorem ipsum dolor</a>
+                  <a class="blogs__title" href="#blog">Three ways to make calls to action more convincing</a>
                   <div class="blogs__date">Jan 9, 2016</div>
                 </div>
               </div>
 
               <div class="blogs__item">
-                <img class="blogs__img" src="assets/images/blog/3.jpg" alt="">
+                <img class="blogs__img" src="assets/images/blog/3.jpg" alt="Blog thumbnail with a creative photo composition" loading="lazy" decoding="async">
                 <div class="blogs__content">
-                  <a class="blogs__title" href="#">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing</a>
+                  <a class="blogs__title" href="#blog">A cleaner footer layout for better trust and scanning</a>
                   <div class="blogs__date">Jan 9, 2016</div>
                 </div>
               </div>
@@ -830,32 +829,32 @@
             <div class="footer__title">Instagram</div>
 
             <div class="instagram">
-              <a class="instagram__item" href="#" target="_blank">
-                <img src="assets/images/instagram/1.jpg" alt="">
+              <a class="instagram__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram/1.jpg" alt="Instagram gallery image 1" loading="lazy" decoding="async">
               </a>
-              <a class="instagram__item" href="#" target="_blank">
-                <img src="assets/images/instagram/2.jpg" alt="">
+              <a class="instagram__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram/2.jpg" alt="Instagram gallery image 2" loading="lazy" decoding="async">
               </a>
-              <a class="instagram__item" href="#" target="_blank">
-                <img src="assets/images/instagram/3.jpg" alt="">
+              <a class="instagram__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram/3.jpg" alt="Instagram gallery image 3" loading="lazy" decoding="async">
               </a>
-              <a class="instagram__item" href="#" target="_blank">
-                <img src="assets/images/instagram/4.jpg" alt="">
+              <a class="instagram__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram/4.jpg" alt="Instagram gallery image 4" loading="lazy" decoding="async">
               </a>
-              <a class="instagram__item" href="#" target="_blank">
-                <img src="assets/images/instagram/5.jpg" alt="">
+              <a class="instagram__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram/5.jpg" alt="Instagram gallery image 5" loading="lazy" decoding="async">
               </a>
-              <a class="instagram__item" href="#" target="_blank">
-                <img src="assets/images/instagram/6.jpg" alt="">
+              <a class="instagram__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram/6.jpg" alt="Instagram gallery image 6" loading="lazy" decoding="async">
               </a>
-              <a class="instagram__item" href="#" target="_blank">
-                <img src="assets/images/instagram/7.jpg" alt="">
+              <a class="instagram__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram/7.jpg" alt="Instagram gallery image 7" loading="lazy" decoding="async">
               </a>
-              <a class="instagram__item" href="#" target="_blank">
-                <img src="assets/images/instagram/8.jpg" alt="">
+              <a class="instagram__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram/8.jpg" alt="Instagram gallery image 8" loading="lazy" decoding="async">
               </a>
-              <a class="instagram__item" href="#" target="_blank">
-                <img src="assets/images/instagram/9.jpg" alt="">
+              <a class="instagram__item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram/9.jpg" alt="Instagram gallery image 9" loading="lazy" decoding="async">
               </a>
             </div>
           </div>
@@ -869,7 +868,7 @@
       </div>
     </footer>
 
-    </class=>
+  </div>
 
 
 
